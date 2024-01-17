@@ -31,6 +31,6 @@ Route::get('/', function () {
 // Route::get('contact', [DemoController::class, 'contact']);
 
 Route::controller(DemoController::class)->group(function () {
-    Route::get('about', 'about')->name('about.page');
+    Route::get('about', 'about')->name('about.page')->middleware('check');
     Route::get('contact', 'contact')->name('contact.page');
 });
