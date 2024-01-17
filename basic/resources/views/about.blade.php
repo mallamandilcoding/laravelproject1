@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <h1>This is about page</h1>
+    <h1>This is about page from controller</h1>
+    <a href="{{ route('contact.page') }}">Contact Page</a>
 </body>
 
 </html>
