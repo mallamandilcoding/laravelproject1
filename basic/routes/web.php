@@ -34,4 +34,6 @@ Route::controller(AdminController::class)->group(function () {
     Route::get('admin/logout', 'destroy')->name('admin.logout');
 });
 
+
+
 require __DIR__.'/auth.php';
