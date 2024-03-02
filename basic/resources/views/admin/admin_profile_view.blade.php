@@ -7,8 +7,8 @@
         <div class="row">
             <div class="col-lg-6 mx-auto">
                 <div class="card">
-                    <img class="img-thumbnail rounded-circle avatar-xl mx-auto"
-                        src="{{ asset('backend/assets/images/small/img-5.jpg')}}" alt="Card image cap">
+                    <img class="img-thumbnail rounded-circle avatar-xl mx-auto" src="{{ !empty($adminData->profile_img)? url('upload_image/admin/'.$adminData->profile_img):
+                        url('upload_image/no_image.jpg') }}" alt="Card image cap">
                     <div class="card-body">
                         <h4 class="card-title">Name: {{ $adminData->name}}</h4>
                         <hr>
